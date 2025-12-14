@@ -2,146 +2,190 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Chillwise Air Conditioner | AC Repair & Installation Delhi</title>
+<title>Chillwise Air Conditioner | AC Repair Service Delhi</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Professional AC repair, installation and gas filling services in Delhi. Trusted technicians, transparent pricing, same-day service.">
+<meta name="description" content="Reliable AC repair, installation and gas filling service in Delhi. Same-day service, transparent pricing, trusted technicians.">
 
 <style>
+:root{
+  --primary:#0ea5e9;
+  --dark:#020617;
+  --accent:#16a34a;
+  --bg:#f8fafc;
+  --card:#ffffff;
+  --text:#0f172a;
+  --muted:#475569;
+}
+
 *{box-sizing:border-box}
 body{
   margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:#f1f5f9;
-  color:#0f172a;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
 }
 
-/* Top bar */
+/* ===== TOP NOTICE ===== */
 .topbar{
-  background:#020617;
+  background:var(--dark);
   color:#fff;
   text-align:center;
-  padding:8px;
+  padding:8px 10px;
   font-size:14px;
-  font-weight:bold;
+  font-weight:600;
 }
 
-/* Header */
-header{
+/* ===== HERO ===== */
+.hero{
   background:linear-gradient(135deg,#0284c7,#0ea5e9);
   color:#fff;
-  padding:55px 20px;
+  padding:60px 20px;
   text-align:center;
 }
 
-header h1{
-  font-size:30px;
-  margin-bottom:10px;
+.hero h1{
+  font-size:34px;
+  margin-bottom:12px;
+  letter-spacing:.3px;
 }
 
-header p{
-  margin:6px 0;
+.hero p{
   font-size:16px;
+  max-width:640px;
+  margin:0 auto 10px;
+  opacity:.95;
 }
 
-.header-btns{
-  margin-top:20px;
+.hero .phone{
+  font-size:22px;
+  font-weight:800;
+  margin:16px 0 8px;
 }
 
-.btn{
+.hero .cta{
+  margin-top:22px;
+}
+
+.hero .cta a{
   display:inline-block;
   margin:6px;
-  padding:14px 32px;
-  border-radius:30px;
-  font-weight:bold;
+  padding:15px 34px;
+  border-radius:40px;
+  font-weight:700;
   text-decoration:none;
   color:#fff;
-}
-
-.btn.whatsapp{background:#16a34a;}
-.btn.call{background:#020617;}
-
-/* Sections */
-section{
-  padding:40px 20px;
-  text-align:center;
-}
-
-h2{
-  font-size:26px;
-  margin-bottom:20px;
-}
-
-/* Cards */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:20px;
-  max-width:1100px;
-  margin:auto;
-}
-
-.card{
-  background:#fff;
-  border-radius:16px;
-  padding:24px;
-  box-shadow:0 8px 22px rgba(0,0,0,.08);
-}
-
-.card h3{
-  margin-bottom:8px;
-  font-size:20px;
-}
-
-.card p{
-  font-size:14px;
-  color:#475569;
-}
-
-.price{
-  font-size:22px;
-  font-weight:bold;
-  color:#16a34a;
-  margin-top:10px;
-}
-
-/* Brands */
-.brands{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
-  gap:16px;
-  max-width:800px;
-  margin:auto;
-}
-
-.brand{
-  background:#fff;
-  padding:16px;
-  border-radius:14px;
-  font-weight:bold;
-  box-shadow:0 6px 16px rgba(0,0,0,.08);
-}
-
-/* Reviews */
-.review{
-  font-style:italic;
   font-size:15px;
 }
 
-/* Footer */
+.hero .whatsapp{background:var(--accent)}
+.hero .call{background:var(--dark)}
+
+/* ===== SECTIONS ===== */
+section{
+  padding:56px 20px;
+}
+
+section h2{
+  text-align:center;
+  font-size:28px;
+  margin-bottom:14px;
+}
+
+.section-sub{
+  text-align:center;
+  color:var(--muted);
+  max-width:700px;
+  margin:0 auto 36px;
+  font-size:15px;
+}
+
+/* ===== GRID ===== */
+.grid{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+
+/* ===== CARDS ===== */
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 26px;
+  box-shadow:0 10px 30px rgba(2,6,23,.08);
+}
+
+.card h3{
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.card p{
+  font-size:15px;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+/* ===== SERVICES ===== */
+.service-card{
+  border-left:6px solid var(--primary);
+}
+
+/* ===== PRICING ===== */
+.price{
+  font-size:24px;
+  font-weight:800;
+  color:var(--accent);
+  margin-top:12px;
+}
+
+/* ===== BRANDS ===== */
+.brands{
+  max-width:900px;
+  margin:40px auto 0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+  gap:16px;
+}
+
+.brand{
+  background:var(--card);
+  padding:18px 10px;
+  text-align:center;
+  border-radius:14px;
+  font-weight:700;
+  box-shadow:0 8px 20px rgba(2,6,23,.08);
+}
+
+/* ===== REVIEWS ===== */
+.review{
+  font-size:15px;
+  font-style:italic;
+}
+
+.review b{
+  display:block;
+  margin-top:10px;
+  font-style:normal;
+}
+
+/* ===== FOOTER ===== */
 footer{
-  background:#020617;
+  background:var(--dark);
   color:#cbd5e1;
-  padding:20px;
+  padding:28px 16px;
+  text-align:center;
   font-size:14px;
 }
 
-/* Floating buttons */
+/* ===== FLOATING ===== */
 .whatsapp-float{
   position:fixed;
   right:18px;
-  bottom:70px;
-  background:#16a34a;
+  bottom:78px;
+  background:var(--accent);
   color:#fff;
   padding:14px 16px;
   border-radius:50%;
@@ -154,53 +198,105 @@ footer{
   bottom:0;
   left:0;
   width:100%;
-  background:#020617;
-  color:#fff;
+  background:var(--dark);
   text-align:center;
-  padding:12px;
-  font-weight:bold;
+  padding:14px;
+  font-weight:800;
 }
-.callbar a{color:#fff;text-decoration:none;}
+
+.callbar a{
+  color:#fff;
+  text-decoration:none;
+  font-size:16px;
+}
 </style>
 </head>
 
 <body>
 
 <div class="topbar">
-📞 Call Now for AC Service in Delhi: 9690990107
+📞 Emergency & Same-Day AC Service Available in Delhi
 </div>
 
-<header>
+<div class="hero">
   <h1>Chillwise Air Conditioner</h1>
-  <p>Professional AC Repair, Installation & Gas Filling Services</p>
-  <p style="font-size:13px;opacity:.9;">Trusted technicians • Same-day service</p>
+  <p>Professional AC Repair, Installation & Gas Filling Services Across Delhi</p>
 
-  <div class="header-btns">
-    <a href="https://wa.me/919690990107" class="btn whatsapp">WhatsApp</a>
-    <a href="tel:9690990107" class="btn call">Call Now</a>
+  <div class="phone">Call: 9690990107</div>
+
+  <div class="cta">
+    <a href="https://wa.me/919690990107" class="whatsapp">WhatsApp Booking</a>
+    <a href="tel:9690990107" class="call">Call Now</a>
   </div>
-</header>
+</div>
 
 <section>
-  <h2>Our AC Services</h2>
+  <h2>Our Core AC Services</h2>
+  <p class="section-sub">
+    Expert technicians • Honest diagnosis • No unnecessary upselling
+  </p>
+
+  <div class="grid">
+    <div class="card service-card">
+      <h3>AC Repair & Servicing</h3>
+      <p>Complete inspection, cleaning and fault repair to restore proper cooling and efficiency.</p>
+    </div>
+
+    <div class="card service-card">
+      <h3>AC Installation & Uninstallation</h3>
+      <p>Safe installation for split and window AC units with proper fitting and testing.</p>
+    </div>
+
+    <div class="card service-card">
+      <h3>Gas Filling & Leakage Fix</h3>
+      <p>Accurate gas refilling with leakage check to ensure long-lasting cooling.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:#f1f5f9">
+  <h2>Transparent Service Pricing</h2>
+  <p class="section-sub">
+    Clear rates • No hidden charges • Final price after inspection
+  </p>
+
   <div class="grid">
     <div class="card">
-      <h3>AC Repair & Service</h3>
-      <p>Accurate diagnosis and reliable repair for all AC brands</p>
+      <h3>Jet Pump AC Service</h3>
+      <div class="price">₹499</div>
     </div>
+
     <div class="card">
-      <h3>AC Installation</h3>
-      <p>Safe installation for split and window AC units</p>
+      <h3>Water Leakage Repair</h3>
+      <div class="price">₹399</div>
     </div>
+
     <div class="card">
-      <h3>Gas Filling</h3>
-      <p>Gas refilling with leakage check and proper testing</p>
+      <h3>Noise Issue Fix</h3>
+      <div class="price">₹499</div>
+    </div>
+
+    <div class="card">
+      <h3>PCB Repair (Non-Inverter)</h3>
+      <div class="price">₹1,999</div>
+    </div>
+
+    <div class="card">
+      <h3>PCB Repair (Inverter)</h3>
+      <div class="price">₹4,499</div>
+    </div>
+
+    <div class="card">
+      <h3>Gas Refilling</h3>
+      <div class="price">₹2,499 – ₹3,199</div>
     </div>
   </div>
 </section>
 
 <section>
   <h2>Brands We Service</h2>
+  <p class="section-sub">All major split & window AC brands supported</p>
+
   <div class="brands">
     <div class="brand">LG</div>
     <div class="brand">Samsung</div>
@@ -211,40 +307,42 @@ footer{
   </div>
 </section>
 
-<section>
-  <h2>Service Pricing</h2>
-  <div class="grid">
-    <div class="card"><h3>Jet Pump AC Service</h3><div class="price">₹499</div></div>
-    <div class="card"><h3>Water Leakage Repair</h3><div class="price">₹399</div></div>
-    <div class="card"><h3>Noise Issue Fixing</h3><div class="price">₹499</div></div>
-    <div class="card"><h3>PCB Repair (Non-Inverter)</h3><div class="price">₹1,999</div></div>
-    <div class="card"><h3>PCB Repair (Inverter)</h3><div class="price">₹4,499</div></div>
-    <div class="card"><h3>Gas Refilling</h3><div class="price">₹2,499 – ₹3,199</div></div>
-  </div>
-  <p style="font-size:13px;color:#475569;margin-top:10px;">
-    Final price may vary based on AC condition and site requirements.
-  </p>
-</section>
+<section style="background:#f1f5f9">
+  <h2>What Customers Say</h2>
 
-<section>
-  <h2>Customer Reviews</h2>
   <div class="grid">
-    <div class="card review">“Technician arrived on time and fixed the issue professionally.”<br><b>– Sandeep, Delhi</b></div>
-    <div class="card review">“Very transparent pricing and quick service.”<br><b>– Pooja, Dwarka</b></div>
-    <div class="card review">“AC cooling improved after gas refilling.”<br><b>– Imran, Laxmi Nagar</b></div>
+    <div class="card review">
+      “Technician arrived on time and solved the issue properly. Very professional.”
+      <b>— Sandeep, Delhi</b>
+    </div>
+
+    <div class="card review">
+      “Clear pricing and fast service. No unnecessary extra charges.”
+      <b>— Pooja, Dwarka</b>
+    </div>
+
+    <div class="card review">
+      “Cooling improved a lot after gas filling. Good experience.”
+      <b>— Imran, Laxmi Nagar</b>
+    </div>
   </div>
 </section>
 
 <section>
   <h2>Working Hours</h2>
-  <p>Monday – Sunday: <b>9:00 AM – 8:00 PM</b><br>Service available across Delhi</p>
+  <p style="text-align:center;font-size:16px">
+    Monday – Sunday<br>
+    <b>9:00 AM – 8:00 PM</b><br>
+    Service Available Across Delhi
+  </p>
 </section>
 
 <footer>
-© 2025 Chillwise Air Conditioner. All rights reserved.
+© 2025 Chillwise Air Conditioner • All Rights Reserved
 </footer>
 
 <a href="https://wa.me/919690990107" class="whatsapp-float">💬</a>
+
 <div class="callbar">
   <a href="tel:9690990107">📞 Call Now: 9690990107</a>
 </div>
